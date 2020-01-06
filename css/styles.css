@@ -1,0 +1,133 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #efefef;
+}
+
+/*Desktop Navigation*/
+.desktop-nav {
+  display: flex;
+}
+.desktop-nav .right-nav {
+  display: flex;
+  margin: auto;
+}
+.desktop-nav .right-nav h2 {
+  font-family: "Solway", serif;
+  font-size: 1em;
+  padding: 15% 25%;
+  font-weight: 100;
+}
+.desktop-nav .right-nav h2:hover {
+  color: grey;
+  cursor: pointer;
+}
+.desktop-nav .left-nav {
+  margin: auto;
+  margin-left: 10%;
+  padding: 2%;
+  width: 30%;
+}
+.desktop-nav .left-nav h1 {
+  font-family: "Playfair Display", serif;
+}
+.desktop-nav .left-nav small {
+  font-family: "Roboto Slab", serif;
+  color: grey;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+/*Landing Content*/
+#landing-text {
+  margin-left: 25%;
+  margin-top: 10%;
+}
+#landing-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
+}
+#landing-text small {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  color: grey;
+}
+
+#navigate-projects {
+  position: fixed;
+  margin-top: -10%;
+  margin-left: 5%;
+}
+#navigate-projects a {
+  text-decoration: none;
+}
+#navigate-projects h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 0.9vw;
+  color: grey;
+  width: 120%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+#navigate-projects h1:hover {
+  color: black;
+  cursor: pointer;
+  transition: 1s;
+}
+#navigate-projects .vertical-line {
+  width: 2px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: grey;
+  margin-left: 20%;
+}
+
+/*Cards Area*/
+#cards-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: 5%;
+  margin-top: 10%;
+  justify-content: space-between;
+}
+#cards-area .card {
+  background-color: white;
+  box-shadow: 5px 5px 10px #d9d9d9;
+  width: 100%;
+  margin: 5%;
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+  display: flex;
+}
+#cards-area .card img {
+  margin: auto;
+  padding: 5%;
+  width: 20%;
+}
+#cards-area .card div {
+  width: 50%;
+  padding: 5%;
+  padding-left: 8%;
+}
+#cards-area .card div h1 {
+  text-align: left;
+  font-family: "Playfair Display", serif;
+}
+#cards-area .card div small {
+  text-align: left;
+  font-family: "Roboto Slab", serif;
+  color: grey;
+}
+#cards-area .card div p {
+  margin-top: 5%;
+  line-height: 200%;
+  text-align: left;
+  color: #474747;
+  font-family: "Roboto Slab", serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

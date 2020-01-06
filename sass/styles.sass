@@ -1,3 +1,5 @@
+@import base
+    
 body
     padding: 0
     margin: 0
@@ -14,6 +16,12 @@ body
             font-size: 1em
             padding: 15% 25%
             font-weight: 100
+            +respond-to(medium-screens)
+                font-size: 2.5em
+                padding: 10% 15%
+            +respond-to(handhelds)
+                font-size: 2.5em
+                padding: 10% 15%
         h2:hover
             color: grey
             cursor: pointer
@@ -24,29 +32,57 @@ body
         width: 30%
         h1
             font-family: "Playfair Display", serif
+            +respond-to(medium-screens)
+                font-size: 4em
+            +respond-to(handhelds)
+                font-size: 4em
         small
             font-family: "Roboto Slab", serif
             color: grey
             font-weight: 100
             font-size: 1em
+            +respond-to(medium-screens)
+                font-size: 2em
+                width: 200px
+            +respond-to(handhelds)
+                font-size: 2em
+                width: 200px
 
 /*Landing Content*/
 #landing-text
     margin-left: 25%
     margin-top: 10%
+    +respond-to(medium-screens)
+        margin-left: 10%
+        margin-right: 10%
+    +respond-to(handhelds)
+        margin-left: 10%
+        margin-right: 10%
     h1
         font-family: "Playfair Display", serif
         font-size: 3em
+        +respond-to(medium-screens)
+            font-size: 4em
+        +respond-to(handhelds)
+            font-size: 4em
     small
         font-family: "Roboto Slab", serif
         font-size: 1.5em
         font-weight: 100
         color: grey
+        +respond-to(medium-screens)
+            font-size: 1.5em
+        +respond-to(handhelds)
+            font-size: 1.5em
 
 #navigate-projects
     position: fixed
     margin-top: -10%
     margin-left: 5%
+    +respond-to(medium-screens)
+        display: none
+    +respond-to(handhelds)
+        display: none
     a
         text-decoration: none
     h1
@@ -75,6 +111,10 @@ body
     margin-right: 5%
     margin-top: 10%
     justify-content: space-between
+    +respond-to(medium-screens)
+        margin-left: 5%
+    +respond-to(handhelds)
+        margin-left: 5%
     .card
         background-color: white
         box-shadow: 5px 5px 10px #d9d9d9
@@ -85,24 +125,50 @@ body
         background-repeat: no-repeat
         text-align: left
         display: flex
+        +respond-to(medium-screens)
+            display: block
+        +respond-to(handhelds)
+            display: block
         img
             margin: auto
             padding: 5%
             width: 20%
+            +respond-to(medium-screens)
+                width: 70%
+                padding: 15%
+            +respond-to(handhelds)
+                width: 70%
+                padding: 15%
         div
             width: 50%
             padding: 5%
             padding-left: 8%
+            +respond-to(medium-screens)
+                width: 85%
+            +respond-to(handhelds)
+                width: 85%
             h1
                 text-align: left
                 font-family: "Playfair Display", serif
+                +respond-to(medium-screens)
+                    font-size: 6em
+                +respond-to(handhelds)
+                    font-size: 6em
             small
                 text-align: left
                 font-family: "Roboto Slab", serif
                 color: grey
+                +respond-to(medium-screens)
+                    font-size: 2em
+                +respond-to(handhelds)
+                    font-size: 2em
             p
                 margin-top: 5%
                 line-height: 200%
                 text-align: left
                 color: #474747
                 font-family: "Roboto Slab", serif
+                +respond-to(medium-screens)
+                    font-size: 2em
+                +respond-to(handhelds)
+                    font-size: 2em

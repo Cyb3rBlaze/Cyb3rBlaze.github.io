@@ -18,6 +18,18 @@ body {
   padding: 15% 25%;
   font-weight: 100;
 }
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  .desktop-nav .right-nav h2 {
+    font-size: 2.5em;
+    padding: 10% 15%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .desktop-nav .right-nav h2 {
+    font-size: 2.5em;
+    padding: 10% 15%;
+  }
+}
 .desktop-nav .right-nav h2:hover {
   color: grey;
   cursor: pointer;
@@ -31,11 +43,33 @@ body {
 .desktop-nav .left-nav h1 {
   font-family: "Playfair Display", serif;
 }
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  .desktop-nav .left-nav h1 {
+    font-size: 4em;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .desktop-nav .left-nav h1 {
+    font-size: 4em;
+  }
+}
 .desktop-nav .left-nav small {
   font-family: "Roboto Slab", serif;
   color: grey;
   font-weight: 100;
   font-size: 1em;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  .desktop-nav .left-nav small {
+    font-size: 2em;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .desktop-nav .left-nav small {
+    font-size: 2em;
+    width: 200px;
+  }
 }
 
 /*Landing Content*/
@@ -43,9 +77,31 @@ body {
   margin-left: 25%;
   margin-top: 10%;
 }
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #landing-text {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #landing-text {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 #landing-text h1 {
   font-family: "Playfair Display", serif;
   font-size: 3em;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #landing-text h1 {
+    font-size: 4em;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #landing-text h1 {
+    font-size: 4em;
+  }
 }
 #landing-text small {
   font-family: "Roboto Slab", serif;
@@ -53,11 +109,31 @@ body {
   font-weight: 100;
   color: grey;
 }
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #landing-text small {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #landing-text small {
+    font-size: 1.5em;
+  }
+}
 
 #navigate-projects {
   position: fixed;
   margin-top: -10%;
   margin-left: 5%;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #navigate-projects {
+    display: none;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #navigate-projects {
+    display: none;
+  }
 }
 #navigate-projects a {
   text-decoration: none;
@@ -92,6 +168,16 @@ body {
   margin-top: 10%;
   justify-content: space-between;
 }
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #cards-area {
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #cards-area {
+    margin-left: 5%;
+  }
+}
 #cards-area .card {
   background-color: white;
   box-shadow: 5px 5px 10px #d9d9d9;
@@ -103,24 +189,76 @@ body {
   text-align: left;
   display: flex;
 }
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #cards-area .card {
+    display: block;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #cards-area .card {
+    display: block;
+  }
+}
 #cards-area .card img {
   margin: auto;
   padding: 5%;
   width: 20%;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #cards-area .card img {
+    width: 70%;
+    padding: 15%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #cards-area .card img {
+    width: 70%;
+    padding: 15%;
+  }
 }
 #cards-area .card div {
   width: 50%;
   padding: 5%;
   padding-left: 8%;
 }
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #cards-area .card div {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #cards-area .card div {
+    width: 85%;
+  }
+}
 #cards-area .card div h1 {
   text-align: left;
   font-family: "Playfair Display", serif;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #cards-area .card div h1 {
+    font-size: 6em;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #cards-area .card div h1 {
+    font-size: 6em;
+  }
 }
 #cards-area .card div small {
   text-align: left;
   font-family: "Roboto Slab", serif;
   color: grey;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #cards-area .card div small {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #cards-area .card div small {
+    font-size: 2em;
+  }
 }
 #cards-area .card div p {
   margin-top: 5%;
@@ -128,6 +266,16 @@ body {
   text-align: left;
   color: #474747;
   font-family: "Roboto Slab", serif;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #cards-area .card div p {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #cards-area .card div p {
+    font-size: 2em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

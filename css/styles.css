@@ -2,6 +2,14 @@ body {
   padding: 0;
   margin: 0;
   background-color: #efefef;
+  scroll-behavior: smooth;
+}
+body .background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  filter: brightness(50%);
 }
 
 /*Desktop Navigation*/
@@ -12,26 +20,39 @@ body {
   display: flex;
   margin: auto;
 }
-.desktop-nav .right-nav h2 {
-  font-family: "Solway", serif;
-  font-size: 1em;
+.desktop-nav .right-nav a {
+  text-decoration: none;
   padding: 15% 25%;
-  font-weight: 100;
 }
 @media only screen and (min-width: 512px) and (max-width: 1000px) {
-  .desktop-nav .right-nav h2 {
-    font-size: 2.5em;
+  .desktop-nav .right-nav a {
     padding: 10% 15%;
   }
 }
 @media only screen and (max-width: 512px) {
-  .desktop-nav .right-nav h2 {
-    font-size: 2.5em;
+  .desktop-nav .right-nav a {
     padding: 10% 15%;
   }
 }
-.desktop-nav .right-nav h2:hover {
-  color: grey;
+.desktop-nav .right-nav a h2 {
+  font-family: "Solway", serif;
+  font-size: 1em;
+  font-weight: 100;
+  transition: 0.5s;
+  color: #d4d4d4;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  .desktop-nav .right-nav a h2 {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .desktop-nav .right-nav a h2 {
+    font-size: 2.5em;
+  }
+}
+.desktop-nav .right-nav a h2:hover {
+  color: white;
   cursor: pointer;
 }
 .desktop-nav .left-nav {
@@ -41,7 +62,8 @@ body {
   width: 30%;
 }
 .desktop-nav .left-nav h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Source Sans Pro", serif;
+  color: #efefef;
 }
 @media only screen and (min-width: 512px) and (max-width: 1000px) {
   .desktop-nav .left-nav h1 {
@@ -55,7 +77,7 @@ body {
 }
 .desktop-nav .left-nav small {
   font-family: "Roboto Slab", serif;
-  color: grey;
+  color: #d4d4d4;
   font-weight: 100;
   font-size: 1em;
 }
@@ -90,8 +112,9 @@ body {
   }
 }
 #landing-text h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Source Sans Pro", serif;
   font-size: 3em;
+  color: #efefef;
 }
 @media only screen and (min-width: 512px) and (max-width: 1000px) {
   #landing-text h1 {
@@ -107,7 +130,7 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 1.5em;
   font-weight: 100;
-  color: grey;
+  color: #d4d4d4;
 }
 @media only screen and (min-width: 512px) and (max-width: 1000px) {
   #landing-text small {
@@ -123,7 +146,9 @@ body {
 #navigate-projects {
   position: fixed;
   margin-top: -10%;
-  margin-left: 5%;
+  margin-left: 2.5%;
+  background-color: rgba(50, 50, 50, 0.7);
+  padding: 2%;
 }
 @media only screen and (min-width: 512px) and (max-width: 1000px) {
   #navigate-projects {
@@ -141,21 +166,21 @@ body {
 #navigate-projects h1 {
   font-family: "Roboto Slab", serif;
   font-size: 0.9vw;
-  color: grey;
+  color: #d4d4d4;
   width: 120%;
   margin-bottom: 1em;
   margin-top: 1em;
 }
 #navigate-projects h1:hover {
-  color: black;
+  color: white;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
 }
 #navigate-projects .vertical-line {
   width: 2px;
   height: 50px;
   border-radius: 20px;
-  background-color: grey;
+  background-color: #d4d4d4;
   margin-left: 20%;
 }
 
@@ -179,8 +204,9 @@ body {
   }
 }
 #cards-area .card {
-  background-color: white;
-  box-shadow: 5px 5px 10px #d9d9d9;
+  z-index: 1;
+  background-color: rgba(50, 50, 50, 0.7);
+  box-shadow: 5px 5px 10px #333333;
   width: 100%;
   margin: 5%;
   background-size: 50% 50%;
@@ -233,7 +259,8 @@ body {
 }
 #cards-area .card div h1 {
   text-align: left;
-  font-family: "Playfair Display", serif;
+  font-family: "Source Sans Pro", serif;
+  color: #efefef;
 }
 @media only screen and (min-width: 512px) and (max-width: 1000px) {
   #cards-area .card div h1 {
@@ -248,7 +275,7 @@ body {
 #cards-area .card div small {
   text-align: left;
   font-family: "Roboto Slab", serif;
-  color: grey;
+  color: #d4d4d4;
 }
 @media only screen and (min-width: 512px) and (max-width: 1000px) {
   #cards-area .card div small {
@@ -264,7 +291,7 @@ body {
   margin-top: 5%;
   line-height: 200%;
   text-align: left;
-  color: #474747;
+  color: #efefef;
   font-family: "Roboto Slab", serif;
 }
 @media only screen and (min-width: 512px) and (max-width: 1000px) {

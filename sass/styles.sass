@@ -92,7 +92,7 @@ body
 
 #navigate-projects
     position: fixed
-    margin-top: -10%
+    margin-top: -15%
     margin-left: 2.5%
     background-color: rgba(50, 50, 50, 0.7)
     padding: 2%
@@ -191,3 +191,70 @@ body
                     font-size: 2em
                 +respond-to(handhelds)
                     font-size: 2em
+
+/*About Content*/
+#content
+    background-color: rgba(50, 50, 50, 0.7)
+    z-index: 1
+    margin: 12%
+    padding: 5%
+    h1
+        text-align: left
+        font-family: "Source Sans Pro", serif
+        color: #efefef
+        +respond-to(medium-screens)
+            font-size: 6em
+        +respond-to(handhelds)
+            font-size: 6em
+    small
+        text-align: left
+        font-family: "Roboto Slab", serif
+        color: #a8a8a8
+        +respond-to(medium-screens)
+            font-size: 2em
+        +respond-to(handhelds)
+            font-size: 2em
+    #area
+        display: flex
+        +respond-to(medium-screens)
+            display: block
+        +respond-to(handhelds)
+            display: block
+        margin-top: 1%
+        #text-content
+            width: 60%
+            +respond-to(medium-screens)
+                width: 100%
+            +respond-to(handhelds)
+                width: 100%
+            p
+                text-align: left
+                font-family: "Source Sans Pro", serif
+                color: #d4d4d4
+                font-size: 1.2em
+                +respond-to(medium-screens)
+                    font-size: 3em
+                +respond-to(handhelds)
+                    font-size: 3em
+        #img
+            width: 40%
+            margin: 5%
+            margin-left: 8%
+            margin-right: 3%
+            +respond-to(handhelds)
+                width: 40%
+            +respond-to(medium-screens)
+                width: 100%
+            img
+                width: 100%
+                margin-top: 20%
+                +respond-to(handhelds)
+                    width: 80%
+                +respond-to(medium-screens)
+                    width: 80%
+            #num2
+                margin-top: 30%
+                +respond-to(handhelds)
+                    display: none
+                +respond-to(medium-screens)
+                    display: none

@@ -145,7 +145,7 @@ body .background {
 
 #navigate-projects {
   position: fixed;
-  margin-top: -10%;
+  margin-top: -15%;
   margin-left: 2.5%;
   background-color: rgba(50, 50, 50, 0.7);
   padding: 2%;
@@ -302,6 +302,130 @@ body .background {
 @media only screen and (max-width: 512px) {
   #cards-area .card div p {
     font-size: 2em;
+  }
+}
+
+/*About Content*/
+#content {
+  background-color: rgba(50, 50, 50, 0.7);
+  z-index: 1;
+  margin: 12%;
+  padding: 5%;
+}
+#content h1 {
+  text-align: left;
+  font-family: "Source Sans Pro", serif;
+  color: #efefef;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #content h1 {
+    font-size: 6em;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #content h1 {
+    font-size: 6em;
+  }
+}
+#content small {
+  text-align: left;
+  font-family: "Roboto Slab", serif;
+  color: #a8a8a8;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #content small {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #content small {
+    font-size: 2em;
+  }
+}
+#content #area {
+  display: flex;
+  margin-top: 1%;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #content #area {
+    display: block;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #content #area {
+    display: block;
+  }
+}
+#content #area #text-content {
+  width: 60%;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #content #area #text-content {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #content #area #text-content {
+    width: 100%;
+  }
+}
+#content #area #text-content p {
+  text-align: left;
+  font-family: "Source Sans Pro", serif;
+  color: #d4d4d4;
+  font-size: 1.2em;
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #content #area #text-content p {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #content #area #text-content p {
+    font-size: 3em;
+  }
+}
+#content #area #img {
+  width: 40%;
+  margin: 5%;
+  margin-left: 8%;
+  margin-right: 3%;
+}
+@media only screen and (max-width: 512px) {
+  #content #area #img {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #content #area #img {
+    width: 100%;
+  }
+}
+#content #area #img img {
+  width: 100%;
+  margin-top: 20%;
+}
+@media only screen and (max-width: 512px) {
+  #content #area #img img {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #content #area #img img {
+    width: 80%;
+  }
+}
+#content #area #img #num2 {
+  margin-top: 30%;
+}
+@media only screen and (max-width: 512px) {
+  #content #area #img #num2 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 512px) and (max-width: 1000px) {
+  #content #area #img #num2 {
+    display: none;
   }
 }
 

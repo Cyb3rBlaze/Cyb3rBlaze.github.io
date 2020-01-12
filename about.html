@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link
+        href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Condense|Sulphur+Point|Montserrat|Solway|Gupter|Poppins|Roboto+Slab&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        href="https://fonts.googleapis.com/css?family=Kulim+Park|Open+Sans+Condensed:300|Playfair+Display|Poppins|Roboto+Condensed|Roboto+Mono&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $("a").on("click", function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top
+                },
+                800,
+                function() {
+                    window.location.hash = hash;
+                }
+                );
+            }
+            });
+        });
+        </script>
+    </head>
+    <body>
+         <!--Scripts-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+        <img class="background" src="res/background.jpeg" width="100%" />
+        <!--Navigation-->
+        <div class="desktop-nav">
+            <div class="left-nav" data-aos="fade-down">
+                <h1>ANSHUL KASHYAP</h1>
+                <small>Entrepreneur, Developer, Visionary</small>
+            </div>
+            <div class="right-nav" data-aos="fade-left">
+                <a href="index.html"><h2>Home</h2></a>
+                <a href=""><h2>About</h2></a>
+            </div>
+        </div>
+        <!--Content-->
+        <div id="content">
+            <h1 data-aos="fade-in">About Me</h1>
+            <small data-aos="fade-in">Entrepreneur, Developer, Visionary</small>
+            <div id="area">
+            <div id="text-content">
+                <p data-aos="fade-in">Yoooooo. It’s Anshul.</p>
+                <p data-aos="fade-in">My goal is to become a successful entrepreneur and develop amazing products that will help revolutionize the world. I am currently a sophomore at Dublin High School taking Principles of Engineering, AP Statistics, and Honors Chemistry. I also do programming, swimming, chess, and lead multiple clubs at DHS. In order to achieve my goal of becoming a Computer Software engineer, I will continue to pursue these interests, take classes at Dublin High School such as AP Computer Science Applications, and undertake personal projects that are related to Software Engineering. I also plan on attending Cal Berkeley and participating in the MET program.</p>
+                <p data-aos="fade-in">I have wanted to become a developer/entrepreneur ever since I was 12 years old. I saw my friends making amazing things with their computers and I decided to dive right in. My friends were (and still are) my inspiration. They help me push myself to improve every day. My dream is to successfully make my companies grow and to teach students when I retire as an entrepreneur/developer.</p>
+                <p data-aos="fade-in">Some personal strengths I have are my abilities to persevere and to motivate/work well with other people. One example of my perseverance is the fact that I have been programming for almost 3 years now while most of my friends have been programming for a lot longer. In this time, I have created multiple apps that are available on the App and Play store and helped my team win the Create award at the Vex Robotics world competition. I have gained more achievements than people who have been programming for a lot longer than me because I worked extremely hard. I also work well with other people because I am an optimistic person and I can help people try their best by motivating them.</p>
+                <p data-aos="fade-in">Some important achievements of mine are creating multiple apps on the App and Play stores, helping my team win create award at worlds, winning awards and placing in multiple hackathons, working with Unity to create a simulation and react-native to create an app for my robotics team, studying Deep Learning and becoming a proficient developer with Tensorflow and Keras, working with a friend on a project involving deep learning where I earned $1.0k, becoming a proficient full stack developer, becoming a proficient desktop application developer, having knowledge in over 8 different programming languages, starting my own company which will change the face of public security, and becoming a more outgoing and open person by the end of freshman year (all thanks to my robotics team).</p>
+            </div>
+            <div id="img">
+            <img src="res/pfp.jpeg" data-aos="fade-in"\>
+            <img src="res/pfp2.jpeg" id="num2" data-aos="fade-in"\>
+            </div>
+            </div>
+        </div>
+    </body>
+</htmkl
